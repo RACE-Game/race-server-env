@@ -15,8 +15,6 @@
           devShell = pkgs.mkShell {
             buildInputs = with pkgs; [
               openssl
-              nginx
-              certbot-full
             ];
             RUST_LOG = "info,wasmer_compiler_cranelift=error,solana_rpc_client=error";
             RUST_BACKTRACE = 1;
